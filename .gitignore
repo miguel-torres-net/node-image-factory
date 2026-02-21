@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
