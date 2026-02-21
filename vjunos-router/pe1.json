@@ -1,0 +1,7 @@
+{
+  "node": "pe1",
+  "hostname": "pe1",
+  "mgmt_ip_cidr": "192.168.50.11/24",
+  "base_qcow2": "/var/lib/vz/template/iso/vjunos-router.qcow2",
+  "make_config_sh": "/opt/vjunos/make-config.sh"
+}
