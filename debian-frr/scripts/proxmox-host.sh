@@ -4,7 +4,7 @@ set -euo pipefail
 VMID=900
 NAME="template-debian-frr"
 IMG="/var/lib/vz/template/iso/debian-12-generic-amd64.qcow2"
-SSHKEY="/root/.ssh/id_ed25519pub"
+SSHKEY="/root/.ssh/id_ed25519.pub"
 STORAGE="local-lvm"
 BRIDGE="vmbr0"
 
