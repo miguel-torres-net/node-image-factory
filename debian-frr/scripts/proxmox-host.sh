@@ -2,9 +2,9 @@
 set -euo pipefail
 
 VMID=900
-NAME="tpl-debian12-frr"
+NAME="template-debian-frr"
 IMG="/var/lib/vz/template/iso/debian-12-generic-amd64.qcow2"
-SSHKEY="/root/astraline/keys/netops-mgmt.pub"
+SSHKEY="/root/.ssh/id_ed25519pub"
 STORAGE="local-lvm"
 BRIDGE="vmbr0"
 
