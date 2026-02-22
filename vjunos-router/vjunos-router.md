@@ -18,18 +18,19 @@ cd vjunos-router
 ```
 
 Output:
-- `vjunos/pe1/disk.qcow2`
-- `vjunos/pe1/config.img`
-- `vjunos/pe1/rendered/juniper.conf`
+- `vjunos/<node>/disk.qcow2`
+- `vjunos/<node>/config.img`
+- `vjunos/<node>/rendered/juniper.conf`
 
 ## 2) Create VM in Proxmox
 
 ```bash
 VMID=2101
-NAME=pe1
 STORAGE=local-lvm
 BRIDGE=vmbr0
 ROOT_DIR="$(pwd)"
+SPEC=./pe1.json
+NAME="$(jq -r '.node' "$SPEC")"
 
 qm destroy "$VMID" --purge 1 >/dev/null 2>&1 || true
 

@@ -55,13 +55,7 @@ rm -f "$DISK_PATH"
 qemu-img create -f qcow2 -F qcow2 -b "$BASE_QCOW2" "$DISK_PATH"
 
 rm -f "$CONFIG_IMG"
-if "$MAKE_CONFIG_SH" -c "$CONF_PATH" -i "$CONFIG_IMG"; then
-  :
-elif "$MAKE_CONFIG_SH" -c "$CONF_PATH" -o "$CONFIG_IMG"; then
-  :
-else
-  "$MAKE_CONFIG_SH" "$CONF_PATH" "$CONFIG_IMG"
-fi
+"$MAKE_CONFIG_SH" -c "$CONF_PATH" -i "$CONFIG_IMG"
 
 echo "Generated artifacts:"
 echo "- ${DISK_PATH}"
