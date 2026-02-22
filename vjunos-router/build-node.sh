@@ -35,7 +35,7 @@ system {
     ssh;
   }
   root-authentication {
-    ssh-ed25519 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOC14ZkM/mImVgYzUXDPvj8yPkW2DcPIzu8vKtns7Nvx engineer@oobm"
+    ssh-ed25519 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOC14ZkM/mImVgYzUXDPvj8yPkW2DcPIzu8vKtns7Nvx engineer@oobm";
   }
 }
 
@@ -59,6 +59,7 @@ qemu-img create -f qcow2 -F qcow2 -b "$BASE_QCOW2" "$DISK_PATH"
 
 rm -f "$CONFIG_IMG"
 "$MAKE_CONFIG_SH" -c "$CONF_PATH" -i "$CONFIG_IMG"
+[[ -s "$CONFIG_IMG" ]] || { echo "ERROR: config.img was not created"; exit 1; }
 
 echo "Generated artifacts:"
 echo "- ${DISK_PATH}"
