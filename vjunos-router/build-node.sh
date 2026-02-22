@@ -34,6 +34,9 @@ system {
   services {
     ssh;
   }
+  root-authentication {
+    ssh-ed25519 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOC14ZkM/mImVgYzUXDPvj8yPkW2DcPIzu8vKtns7Nvx engineer@oobm"
+  }
 }
 
 interfaces {
