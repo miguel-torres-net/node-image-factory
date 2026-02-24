@@ -1,5 +1,9 @@
 # node-image-factory
 
+NOTE: CURRENTLY WORKING ON IT.
+As of 24 Feb: Modifying the vjunos create-vm.sh script so it creates and gives 4 dataplane interfaces more to each vJunos vm.
+I'll probably create vmbr bridges manually just for the MVP I'm working on, then automate that afterwards if it truly adds value.
+
 This is my working repo for the Utilities Carrier lab.
 
 I use it to generate VM artifacts and bootstrap configs so I can spin nodes up quickly in Proxmox without repeating manual steps.
