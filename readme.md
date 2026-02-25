@@ -1,5 +1,8 @@
 # node-image-factory
 
+NOTE: CURRENTLY WORKING ON IT.
+As of 25 Feb: Proved isis adjacency works with the manual tweaks I did, so now I'll focus on refactoring the scripts I use to parameterize (I had to google how to spell that word) things like VM ID, VM name, ssh pubkey, etc
+
 This is my working repo for the Utilities Carrier lab.
 
 I use it to generate VM artifacts and bootstrap configs so I can spin nodes up quickly in Proxmox without repeating manual steps.
