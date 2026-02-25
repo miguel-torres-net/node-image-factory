@@ -1,8 +1,7 @@
 # node-image-factory
 
 NOTE: CURRENTLY WORKING ON IT.
-As of 24 Feb: Modifying the vjunos create-vm.sh script so it creates and gives 4 dataplane interfaces more to each vJunos vm.
-I'll probably create vmbr bridges manually just for the MVP I'm working on, then automate that afterwards if it truly adds value.
+As of 25 Feb: Proved isis adjacency works with the manual tweaks I did, so now I'll focus on refactoring the scripts I use to parameterize (I had to google how to spell that word) things like VM ID, VM name, ssh pubkey, etc
 
 This is my working repo for the Utilities Carrier lab.
 
