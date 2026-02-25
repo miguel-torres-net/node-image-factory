@@ -16,6 +16,7 @@ fi
 NODE="$(jq -re '.node' "$SPEC_PATH")"
 HOSTNAME="$(jq -re '.hostname' "$SPEC_PATH")"
 MGMT_IP_CIDR="$(jq -re '.mgmt_ip_cidr' "$SPEC_PATH")"
+PUBKEY="$(jq -re '.pubkey' "$SPEC_PATH")"
 BASE_QCOW2="$(jq -re '.base_qcow2' "$SPEC_PATH")"
 MAKE_CONFIG_SH="$(jq -re '.make_config_sh' "$SPEC_PATH")"
 
@@ -35,7 +36,7 @@ system {
     ssh;
   }
   root-authentication {
-    ssh-ed25519 "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOC14ZkM/mImVgYzUXDPvj8yPkW2DcPIzu8vKtns7Nvx engineer@oobm";
+    ${PUBKEY};
   }
 }
 
