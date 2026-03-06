@@ -1,7 +1,9 @@
 # node-image-factory
 
 NOTE: CURRENTLY WORKING ON IT.
-As of 25 Feb: Proved isis adjacency works with the manual tweaks I did, so now I'll focus on refactoring the scripts I use to parameterize (I had to google how to spell that word) things like VM ID, VM name, ssh pubkey, etc
+
+Update 6 March: I'm considering creating yet another repo that will deprecate this one, given how I've been thinking about these days how I can improve it for a better scalability.
+This is mainly a self-learning project, and I believe I've outgrown this stage. Will update further with more progress.
 
 This is my working repo for the Utilities Carrier lab.
 
